@@ -1,0 +1,25 @@
+{
+  "name": "pull-request-bundle-size-check-demo-app",
+  "version": "1.0.0",
+  "description": "Demonstrate how the github.com/hatlen/pull-request-bundle-size-check service works",
+  "repository": "https://github.com/Hatlen/pull-request-bundle-size-check-demo-app",
+  "author": "Trond Fröding Hatlen <trondfroding@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "webpack-bundle-analyzer": "WEBPACK_BUNDLE_ANALYZER=true webpack"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^3.0.3"
+  }
+}
