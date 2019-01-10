@@ -27,7 +27,13 @@ const webpackConfig = {
 
 if (process.env.WEBPACK_BUNDLE_ANALYZER === "true") {
   const webpackBundleAnalyzer = require("webpack-bundle-analyzer");
-  webpackConfig.plugins.push(new webpackBundleAnalyzer.BundleAnalyzerPlugin());
+  webpackConfig.plugins.push(
+    new webpackBundleAnalyzer.BundleAnalyzerPlugin({
+      analyzerMode: "static",
+      generateStatsFile: true,
+      openAnalyzer: false
+    })
+  );
 }
 
 module.exports = webpackConfig;
