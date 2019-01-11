@@ -13,13 +13,11 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "webpack": "^4.28.1",
+    "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.2.1"
   },
   "scripts": {
     "build": "webpack",
     "webpack-bundle-analyzer": "WEBPACK_BUNDLE_ANALYZER=true webpack"
-  },
-  "devDependencies": {
-    "webpack-bundle-analyzer": "^3.0.3"
   }
 }
